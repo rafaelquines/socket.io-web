@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!-- <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -16,6 +16,21 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
-</ul>
+</ul> -->
 
+
+<table style="width: 60%; border: 1px solid black;">
+  <tr>
+    <th>Worker</th>
+    <th>Status</th>
+    <th>ShopId</th>
+    <th>Progress</th>
+  </tr>
+  <tr *ngFor="let worker of workers">
+    <td>{{worker.id}}</td>
+    <td>{{worker.status}}</td>
+    <td>{{worker.shopId}}</td>
+    <td>{{worker.progress}}</td>
+  </tr>
+</table>
 <router-outlet></router-outlet>
